@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio di Roberto Sangermano, sviluppatore web specializzato in frontend e backend." />
+  <meta name="author" content="Roberto Sangermano" />
+  <title>Portfolio | Roberto Sangermano</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- CookieConsent CSS (Osano) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Salta al contenuto principale</a>
+
+  <header>
+    <h1>Benvenuto nel mio Portfolio</h1>
+    <p>Sviluppatore Web | Frontend & Backend</p>
+  </header>
+
+  <main id="main">
+    <section>
+      <h2>Chi sono</h2>
+
+      <!-- Foto personale -->
+      <img src="img/volto.png" alt="Foto di Roberto Sangermano" class="profile-img" />
+
+      <p>Mi chiamo Roberto Sangermano e aiuto aziende e professionisti a distinguersi nel mondo digitale attraverso la realizzazione di siti web moderni, funzionali e completamente su misura.
+Ogni progetto nasce dall’ascolto attento delle esigenze del cliente, per trasformare le sue idee in soluzioni concrete, efficaci e capaci di valorizzare davvero la sua identità online. Che si tratti di lanciare un nuovo brand, rinnovare la propria presenza sul web o aumentare la visibilità e le conversioni, il mio obiettivo è offrire risultati tangibili e duraturi.
+Lavoro con passione, cura dei dettagli e una visione strategica, perché credo che un sito non debba solo essere bello, ma anche utile, intuitivo e ottimizzato per crescere nel tempo. Se cerchi un partner affidabile per costruire la tua presenza digitale in modo professionale e distintivo, sono qui per aiutarti.</p>
+    </section>
+
+    <section>
+      <h2>Progetti</h2>
+      <ul>
+        <li><a href="landing-page/index.html">Landing Page - EasyPromo</a></li>
+        <li><a href="boostlab/index.html">Sito Servizi - BoostLab</a></li>
+        <li><a href="https://centrorevisionicorfaz.altervista.org/">Centro Revisioni - CorFaz</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contattami via email: <a href="mailto:tua.email@example.com">tua.email@example.com</a></p>
+    <p><a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
+  </footer>
+
+  <!-- Cookie Consent (Osano) -->
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        palette: {
+          popup: { background: "#000" },
+          button: { background: "#007BFF" }
+        },
+        theme: "classic",
+        type: "opt-in",
+        content: {
+          message: "Questo sito utilizza cookie tecnici per il funzionamento. Altri cookie verranno installati solo col tuo consenso.",
+          dismiss: "Accetta",
+          allow: "Accetta tutti",
+          deny: "Rifiuta",
+          link: "Privacy Policy",
+          href: "privacy.html"
+        }
+      });
+    });
+  </script>
+
+  <!-- Pulsante WhatsApp con icona PNG -->
+  <a href="https://wa.me/3271725570?text=Ciao%20Roberto%2C%20ho%20visto%20il%20tuo%20portfolio%20e%20vorrei%20parlare%20con%20te!" 
+     class="whatsapp-float" target="_blank" aria-label="Chatta su WhatsApp">
+    <img src="img/whatsapp.png" alt="Chatta su WhatsApp" width="32" height="32" />
+  </a>
+</body>
+</html>
