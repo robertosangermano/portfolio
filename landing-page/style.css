@@ -1,0 +1,257 @@
+/* style.css */
+
+/* Reset base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Titoli */
+h1, h2, h3 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Link */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Sezioni */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #000; /* fallback */
+  color: white;
+  min-height: 60vh;
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://animalsplanet.it/wp-content/uploads/2024/08/come-pulire-gli-occhi-al-cane.jpg') no-repeat center center/cover;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background: #FF5733;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: #C70039;
+  outline: none;
+}
+
+/* Servizi */
+.services {
+  background-color: #fff;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 300px;
+  padding: 1rem;
+  text-align: center;
+  flex: 1 1 280px;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.service-item h3 {
+  color: #007BFF;
+  margin-bottom: 0.5rem;
+}
+
+/* Chi siamo */
+.about {
+  background-color: #e9e9e9;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.about-content p {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Testimonianze */
+.testimonials {
+  background-color: #fff;
+  padding-bottom: 3rem;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 350px;
+  padding: 1.5rem;
+  font-style: italic;
+  text-align: left;
+  flex: 1 1 300px;
+}
+
+.testimonial-item footer {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: right;
+}
+
+/* Contatti */
+.contact {
+  background-color: #003580;
+  color: white;
+  padding-bottom: 3rem;
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact a {
+  color: #FF5733;
+  word-break: break-word;
+}
+
+footer {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+
+/* Telefono/tablet */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .service-list,
+  .testimonial-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item,
+  .testimonial-item {
+    max-width: 90%;
+  }
+
+  .about-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  section {
+    padding: 40px 10px;
+  }
+}
