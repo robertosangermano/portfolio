@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="BoostLab - Agenzia di Marketing digitale. Strategie su misura per far crescere la tua attività online." />
+  <meta name="author" content="BoostLab" />
+  <title>BoostLab | Agenzia di Marketing Digitale</title>
+  
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- CookieConsent CSS (Osano) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Salta al contenuto principale</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1>BoostLab</h1>
+      <nav role="navigation" aria-label="Menu principale">
+        <ul class="nav-list">
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#chi-siamo">Chi Siamo</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero">
+      <div class="container">
+        <h2>Soluzioni di Marketing Digitale su Misura per Te</h2>
+        <p>Aiutiamo la tua azienda a crescere online con strategie efficaci di SEO, social media, pubblicità e branding.</p>
+        <a href="#contatti" class="btn-primary">Contattaci Ora</a>
+      </div>
+    </section>
+
+    <section id="servizi" class="servizi section">
+      <div class="container">
+        <h2>I Nostri Servizi</h2>
+        <ul class="servizi-list" role="list">
+          <li>
+            <h3>SEO & Content Marketing</h3>
+            <p>Migliora la visibilità del tuo sito sui motori di ricerca e attira clienti qualificati.</p>
+          </li>
+          <li>
+            <h3>Social Media Management</h3>
+            <p>Gestiamo i tuoi profili social per costruire una community coinvolta e aumentare la brand awareness.</p>
+          </li>
+          <li>
+            <h3>Campagne Pubblicitarie</h3>
+            <p>Creiamo campagne su misura su Google Ads, Facebook e Instagram per massimizzare il ROI.</p>
+          </li>
+          <li>
+            <h3>Branding & Design</h3>
+            <p>Progettiamo l’identità visiva del tuo brand per renderlo unico e riconoscibile.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="chi-siamo" class="chi-siamo section">
+      <div class="container">
+        <h2>Chi Siamo</h2>
+        <p>BoostLab è un’agenzia di marketing digitale con oltre 10 anni di esperienza nel settore. Il nostro team di esperti lavora con passione per aiutarti a raggiungere i tuoi obiettivi online.</p>
+      </div>
+    </section>
+
+    <section id="contatti" class="contatti section">
+      <div class="container">
+        <h2>Contattaci</h2>
+        <form action="#" method="post" novalidate aria-label="Modulo di contatto">
+          <div class="form-group">
+            <label for="nome">Nome e Cognome</label>
+            <input type="text" id="nome" name="nome" required aria-required="true" placeholder="Inserisci il tuo nome" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-required="true" placeholder="esempio@mail.com" />
+          </div>
+          <div class="form-group">
+            <label for="messaggio">Messaggio</label>
+            <textarea id="messaggio" name="messaggio" rows="5" required aria-required="true" placeholder="Scrivi qui il tuo messaggio"></textarea>
+          </div>
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="privacy" name="privacy" required aria-required="true" />
+            <label for="privacy">Ho letto e accetto la <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></label>
+          </div>
+          <button type="submit" class="btn-primary">Invia</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 BoostLab. Tutti i diritti riservati.</p>
+      <p><a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent (Osano) -->
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        palette: {
+          popup: { background: "#000" },
+          button: { background: "#007BFF" }
+        },
+        theme: "classic",
+        type: "opt-in",
+        content: {
+          message: "Questo sito utilizza cookie tecnici per il funzionamento. Altri cookie verranno installati solo col tuo consenso.",
+          dismiss: "Accetta",
+          allow: "Accetta tutti",
+          deny: "Rifiuta",
+          link: "Privacy Policy",
+          href: "privacy.html"
+        }
+      });
+    });
+  </script>
+</body>
+</html>
